@@ -142,9 +142,7 @@ figure {
   Hide the overview on mobile devices
   TIP: Use media queries to reveal it on larger devices
 */
-.movie-overview {
-  display: none;
-}
+
 
 .movie-title-label {
   font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -164,11 +162,12 @@ figure {
 
 /* FOOTER styles */
 .site-footer {
-  text-align: center;
+  text-align: center; color: white; background-color: black;
+
 }
 
 .footer-nav {
-  padding: 1em;
+  padding: 1em; float: left;
 }
 
 .footer-nav-item {
@@ -187,11 +186,17 @@ figure {
 
 
 .about {
-  background-color: #333333;
+  background-color: black;
   color: #ffffff;
   padding: 1em;
 }
 
 .about > p {
   margin: 0;
+}
+
+@@media (min-width: 768px) {
+
+  .movie-overview {display: block}
+
 }
